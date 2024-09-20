@@ -1,0 +1,6 @@
+# Template for heading project
+.tw : try with resource
+  java.lang.AutoCloseable -> try ($expr$$END$) {\
+    $END$\
+  }
+

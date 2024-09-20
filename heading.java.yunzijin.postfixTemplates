@@ -1,0 +1,63 @@
+# Template for heading project
+.success : BiResult success equal
+    com.hd123.cloud.pay.cloudfund.utils.base.BiResult -> com.hd123.cloud.pay.cloudfund.utils.base.BiCode.SUCCESS.is($expr$.code)$END$
+
+.result : BiCode eq result code
+    com.hd123.cloud.pay.cloudfund.utils.base.BiResult -> com.hd123.cloud.pay.cloudfund.utils.base.BiCode.$biCode#1$.is($expr$.code)$END$
+
+.fail : BiResult fail equal
+    com.hd123.cloud.pay.cloudfund.utils.base.BiResult -> com.hd123.cloud.pay.cloudfund.utils.base.BiCode.FAIL.is($expr$.code)$END$
+
+.startOfDay : Start of the day of date
+    java.util.Date -> com.hd123.cloud.pay.cloudfund.utils.date.DateUtil.getStartOfDay($expr$)$END$
+
+.endOfDay : End of the day of date
+    java.util.Date -> com.hd123.cloud.pay.cloudfund.utils.date.DateUtil.getEndOfDay($expr$)$END$
+
+.safeStream : Convert List to safe stream
+    java.util.List -> com.hd123.cloud.pay.cloudfund.utils.Lists.stream($expr$)$END$
+
+.ifNoNull : Object if not null action
+    ANY [com.hd123.cloud.pay.cloudfund.utils.MyObjects] -> com.hd123.cloud.pay.cloudfund.utils.MyObjects.ifNotNull($expr$, v -> $END$)
+
+.ifNotBlank : String if not blank action
+    STRING -> com.hd123.cloud.pay.cloudfund.utils.Strings.ifNotBlank($expr$, v -> $END$)
+
+.aesEncrypt2 : encrypt string with aes
+    STRING -> com.hd123.cloud.pay.cloudfund.utils.AesUtil.encrypt2($expr$)
+
+.aesDecrypt2 : decrypt string with aes
+    STRING -> com.hd123.cloud.pay.cloudfund.utils.AesUtil.decrypt2($expr$)
+
+.convert : List A convert to list B
+    java.util.List -> com.hd123.cloud.pay.cloudfund.utils.Lists.convert($expr$, e -> $END$)
+
+.optConvert : List A convert to list Optional B
+    java.util.List -> com.hd123.cloud.pay.cloudfund.utils.Lists.optConvert($expr$, e -> $END$)
+
+.first : Find list first element
+    java.util.List -> com.hd123.cloud.pay.cloudfund.utils.Lists.first($expr$);
+
+.safeFirst : Find list first element safely
+    java.util.List -> com.hd123.cloud.pay.cloudfund.utils.Lists.first2($expr$);
+
+.last : Find list last element
+    java.util.List -> com.hd123.cloud.pay.cloudfund.utils.Lists.last($expr$);
+
+.sformat : Format string with custom format
+    java.lang.String -> com.hd123.cloud.pay.cloudfund.utils.Strings.format($expr$,$END$)
+
+.ys : yyyy-MM-dd HH:mm:ss
+    java.util.Date -> com.hd123.cloud.pay.cloudfund.utils.DateConverterEnum.YMD_HMS.format($expr$)
+    java.lang.String -> com.hd123.cloud.pay.cloudfund.utils.DateConverterEnum.parseToDate($expr$)
+
+.yd : yyyy-MM-dd
+    java.util.Date -> com.hd123.cloud.pay.cloudfund.utils.DateConverterEnum.YMD.format($expr$)
+    java.lang.String -> com.hd123.cloud.pay.cloudfund.utils.DateConverterEnum.parseToDate($expr$)
+
+.yss : yyyy-MM-dd HH:mm:ss.SSS
+    java.util.Date -> com.hd123.cloud.pay.cloudfund.utils.DateConverterEnum.YMD_HMS_S.format($expr$)
+    java.lang.String -> com.hd123.cloud.pay.cloudfund.utils.DateConverterEnum.parseToDate($expr$)
+
+.orDefault : object if null set to default
+    ANY [com.hd123.cloud.pay.cloudfund.utils.MyObjects] -> com.hd123.cloud.pay.cloudfund.utils.MyObjects.orDefault($expr$, v -> $END$)
