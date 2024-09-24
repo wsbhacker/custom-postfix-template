@@ -1,4 +1,4 @@
 # Template for heading project
 
 .assertTrue : assertTrue hacker
-  BOOLEAN [org.junit.jupiter.api.Assertions]  →  org.junit.jupiter.api.Assertions.assertTrue($expr$)
+  BOOLEAN [org.junit.jupiter.api.Assertions]  →  org.junit.jupiter.api.Assertions.assertTrue($expr$);$END$
