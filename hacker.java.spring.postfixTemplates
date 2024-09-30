@@ -1,0 +1,4 @@
+# Template for heading project
+
+.isTrueSp
+  BOOLEAN [org.springframework.util.Assert] -> org.springframework.util.Assert.isTrue($expr$,"$END$");
