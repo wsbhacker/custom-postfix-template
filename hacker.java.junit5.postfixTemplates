@@ -1,4 +1,4 @@
 # Template for heading project
 
-.truej : assertTrue junit5
+.truej5 : assertTrue junit5
   BOOLEAN [org.junit.jupiter.api.Assertions]  →  org.junit.jupiter.api.Assertions.assertTrue($expr$);$END$
