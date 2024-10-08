@@ -1,0 +1,3 @@
+.notnullrb : Rumba Assert.notNull
+  NOT_PRIMITIVE [com.hd123.rumba.commons.lang.Assert] -> com.hd123.rumba.commons.lang.Assert.notNull($expr$,"$END$");
+
