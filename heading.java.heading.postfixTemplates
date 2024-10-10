@@ -3,3 +3,7 @@
 
 .notblankrb : Rumba Assert.notBlank
   java.lang.String [com.hd123.rumba.commons.lang.Assert] -> com.hd123.rumba.commons.lang.Assert.notBlank($expr$,"$expr$");$END$
+
+.notemptyrb : Rumba Assert.notEmpty
+  NOT_PRIMITIVE [com.hd123.rumba.commons.lang.Assert] -> com.hd123.rumba.commons.lang.Assert.notEmpty($expr$,"$expr$");
+
