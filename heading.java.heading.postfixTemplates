@@ -1,3 +1,5 @@
 .notnullrb : Rumba Assert.notNull
-  NOT_PRIMITIVE [com.hd123.rumba.commons.lang.Assert] -> com.hd123.rumba.commons.lang.Assert.notNull($expr$,"$END$");
+  NOT_PRIMITIVE [com.hd123.rumba.commons.lang.Assert] -> com.hd123.rumba.commons.lang.Assert.notNull($expr$,"$expr$");
 
+.notblankrb : Rumba Assert.notBlank(String argument, String argumentName)
+  STRING_LITERAL [com.hd123.rumba.commons.lang.Assert] -> com.hd123.rumba.commons.lang.Assert.notBlank($expr$,"$expr$");
