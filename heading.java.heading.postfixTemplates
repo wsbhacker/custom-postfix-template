@@ -2,7 +2,7 @@
   NOT_PRIMITIVE [com.hd123.rumba.commons.lang.Assert] -> com.hd123.rumba.commons.lang.Assert.notNull($expr$,"$expr$");
 
 .notblankrb : Rumba Assert.notBlank
-  STRING_LITERAL [com.hd123.rumba.commons.lang.Assert] -> com.hd123.rumba.commons.lang.Assert.notBlank($expr$,"$expr$");$END$
+  java.lang.String [com.hd123.rumba.commons.lang.Assert] -> com.hd123.rumba.commons.lang.Assert.notBlank($expr$,"$expr$");$END$
 
 .testrb : Rumba test
-  STRING_LITERAL -> System.out.println("$expr$");
+  java.lang.String -> System.out.println($expr$);
