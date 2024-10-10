@@ -3,6 +3,3 @@
 
 .notblankrb : Rumba Assert.notBlank
   java.lang.String [com.hd123.rumba.commons.lang.Assert] -> com.hd123.rumba.commons.lang.Assert.notBlank($expr$,"$expr$");$END$
-
-.testrb : Rumba test
-  java.lang.String -> System.out.println($expr$);
