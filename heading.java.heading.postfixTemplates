@@ -5,4 +5,4 @@
   STRING_LITERAL [com.hd123.rumba.commons.lang.Assert] -> com.hd123.rumba.commons.lang.Assert.notBlank($expr$,"$expr$");$END$
 
 .testrb : Rumba test
-  STRING_LITERAL -> 11$expr$$expr$22
+  STRING_LITERAL -> System.out.println("$expr$");
