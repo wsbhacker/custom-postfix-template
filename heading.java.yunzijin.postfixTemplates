@@ -60,7 +60,7 @@
     java.lang.String [com.hd123.cloud.pay.cloudfund.utils.DateConverterEnum] -> com.hd123.cloud.pay.cloudfund.utils.DateConverterEnum.parseToDate($expr$)
 
 .orDefault : object if null set to default
-    ANY [com.hd123.cloud.pay.cloudfund.utils.MyObjects] -> com.hd123.cloud.pay.cloudfund.utils.MyObjects.orDefault($expr$, v -> $END$)
+    ANY [com.hd123.cloud.pay.cloudfund.utils.MyObjects] -> com.hd123.cloud.pay.cloudfund.utils.MyObjects.orDefault($expr$, () -> $END$)
 
 .okrespyzj : yzj RSResp.ok
   ANY [com.hd123.cloud.pay.cloudfund.api.base.RSResp] -> return com.hd123.cloud.pay.cloudfund.api.base.RSResp.ok($expr$);
