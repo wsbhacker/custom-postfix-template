@@ -1,5 +1,5 @@
 .notnullrb : Rumba Assert.notNull
-  NOT_PRIMITIVE [com.hd123.rumba.commons.lang.Assert] -> com.hd123.rumba.commons.lang.Assert.notNull($expr$,"$field:completeSmart()$");
+  NOT_PRIMITIVE [com.hd123.rumba.commons.lang.Assert] -> com.hd123.rumba.commons.lang.Assert.notNull($expr$,"$expr$");
 
 .notemptyrb : Rumba Assert.notEmpty or notBlank for string
   java.lang.String [com.hd123.rumba.commons.lang.Assert] -> com.hd123.rumba.commons.lang.Assert.notBlank($expr$,"$expr$");
