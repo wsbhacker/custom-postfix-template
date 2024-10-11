@@ -59,7 +59,7 @@
     java.util.Date [com.hd123.cloud.pay.cloudfund.utils.DateConverterEnum] -> com.hd123.cloud.pay.cloudfund.utils.DateConverterEnum.YMD_HMS_S.format($expr$)
     java.lang.String [com.hd123.cloud.pay.cloudfund.utils.DateConverterEnum] -> com.hd123.cloud.pay.cloudfund.utils.DateConverterEnum.parseToDate($expr$)
 
-.orDefault : object if null set to default
+.ordefaultyzj : yzj MyObjects.orDefault(T,() -> T)
     ANY [com.hd123.cloud.pay.cloudfund.utils.MyObjects] -> com.hd123.cloud.pay.cloudfund.utils.MyObjects.orDefault($expr$, () -> $END$)
 
 .okrespyzj : yzj RSResp.ok
