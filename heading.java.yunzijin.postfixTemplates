@@ -67,3 +67,15 @@
 
 .errorrespyzj : yzj RSResp.err
   ANY [com.hd123.cloud.pay.cloudfund.api.base.RSResp] -> return com.hd123.cloud.pay.cloudfund.api.base.RSResp.err($expr$);
+
+.bizerrorthrowyzj : throw BizException.of()
+  java.lang.String [com.hd123.cloud.pay.cloudfund.exception.BizException] -> throw BizException.of($expr$);$END$ 
+  com.hd123.cloud.pay.cloudfund.api.base.exception.ApiErrorCodeEnum [com.hd123.cloud.pay.cloudfund.exception.BizException] -> throw BizException.of($expr$);$END$ 
+  java.lang.Throwable [com.hd123.cloud.pay.cloudfund.exception.BizException] -> throw BizException.of($expr$);$END$ 
+
+
+.bizerroryzj : BizException.of()
+  java.lang.String [com.hd123.cloud.pay.cloudfund.exception.BizException] -> BizException.of($expr$)$END$ 
+  com.hd123.cloud.pay.cloudfund.api.base.exception.ApiErrorCodeEnum  [com.hd123.cloud.pay.cloudfund.exception.BizException] -> BizException.of($expr$)$END$ 
+  java.lang.Throwable [com.hd123.cloud.pay.cloudfund.exception.BizException] -> BizException.of($expr$)$END$ 
+
