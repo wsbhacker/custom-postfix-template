@@ -76,3 +76,5 @@
   com.hd123.cloud.pay.cloudfund.api.base.exception.ApiErrorCodeEnum  [com.hd123.cloud.pay.cloudfund.exception.BizException] -> BizException.of($expr$)$END$ 
   java.lang.Throwable [com.hd123.cloud.pay.cloudfund.exception.BizException] -> BizException.of($expr$)$END$ 
 
+.isemptyzyj : QueryResult.data is empty
+  com.hd123.rumba.commons.biz.query.QueryResult [org.apache.commons.collections4.CollectionUtils] -> CollectionUtils.isEmpty($expr$.getRecords());$END$
