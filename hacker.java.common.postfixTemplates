@@ -6,5 +6,5 @@
 .notnulljava : java util Objects.nonNull
   NOT_PRIMITIVE -> java.util.Objects.nonNull($expr$)$END$
 
-.nulljava : java util Objects.isNull
+.isnulljava : java util Objects.isNull
   NOT_PRIMITIVE -> java.util.Objects.isNull($expr$)$END$
