@@ -1,3 +1,6 @@
+## java.yunzijin ##
+
+
 ## com.hd123.cloud.pay.cloudfund.utils.base.BiCode ##
 .issuccessyzj : BiCode.SUCCESS.is()
   com.hd123.cloud.pay.cloudfund.utils.base.BiResult [com.hd123.cloud.pay.cloudfund.utils.base.BiCode] -> com.hd123.cloud.pay.cloudfund.utils.base.BiCode.SUCCESS.is($expr$.code)$END$
