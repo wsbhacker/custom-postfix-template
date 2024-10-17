@@ -1,63 +1,98 @@
 # Template for heading project
 .issuccessyzj : BiCode.SUCCESS.is()
-    com.hd123.cloud.pay.cloudfund.utils.base.BiResult [com.hd123.cloud.pay.cloudfund.utils.base.BiCode] -> com.hd123.cloud.pay.cloudfund.utils.base.BiCode.SUCCESS.is($expr$.code)$END$
+  com.hd123.cloud.pay.cloudfund.utils.base.BiResult [com.hd123.cloud.pay.cloudfund.utils.base.BiCode] -> com.hd123.cloud.pay.cloudfund.utils.base.BiCode.SUCCESS.is($expr$.code)$END$
 
 .isbicodeyzj : BiCode.xxx.is()
-    com.hd123.cloud.pay.cloudfund.utils.base.BiResult [com.hd123.cloud.pay.cloudfund.utils.base.BiCode] -> com.hd123.cloud.pay.cloudfund.utils.base.BiCode.$biCode#1$.is($expr$.code)$END$
+  com.hd123.cloud.pay.cloudfund.utils.base.BiResult [com.hd123.cloud.pay.cloudfund.utils.base.BiCode] -> com.hd123.cloud.pay.cloudfund.utils.base.BiCode.$biCode#1$.is($expr$.code)$END$
 
 .isfailyzj : BiCode.FAIL.is()
-    com.hd123.cloud.pay.cloudfund.utils.base.BiResult [com.hd123.cloud.pay.cloudfund.utils.base.BiCode] -> com.hd123.cloud.pay.cloudfund.utils.base.BiCode.FAIL.is($expr$.code)$END$
+  com.hd123.cloud.pay.cloudfund.utils.base.BiResult [com.hd123.cloud.pay.cloudfund.utils.base.BiCode] -> com.hd123.cloud.pay.cloudfund.utils.base.BiCode.FAIL.is($expr$.code)$END$
+
+
+
+
+
 
 .startdayyzj : Start of the day of date
-    java.util.Date [com.hd123.cloud.pay.cloudfund.utils.date.DateUtil] -> com.hd123.cloud.pay.cloudfund.utils.date.DateUtil.getStartOfDay($expr$)$END$
+  java.util.Date [com.hd123.cloud.pay.cloudfund.utils.date.DateUtil] -> com.hd123.cloud.pay.cloudfund.utils.date.DateUtil.getStartOfDay($expr$)$END$
 
 .enddayyzj : End of the day of date
-    java.util.Date [com.hd123.cloud.pay.cloudfund.utils.date.DateUtil] -> com.hd123.cloud.pay.cloudfund.utils.date.DateUtil.getEndOfDay($expr$)$END$
+  java.util.Date [com.hd123.cloud.pay.cloudfund.utils.date.DateUtil] -> com.hd123.cloud.pay.cloudfund.utils.date.DateUtil.getEndOfDay($expr$)$END$
 
-.safestreamyzj : Convert List to safe stream
-    java.util.List [com.hd123.cloud.pay.cloudfund.utils.Lists] -> com.hd123.cloud.pay.cloudfund.utils.Lists.stream($expr$)$END$
 
-.ifnotnullyzj : MyObjects.ifNotNull(expr,v -> )
-    ANY [com.hd123.cloud.pay.cloudfund.utils.MyObjects] -> com.hd123.cloud.pay.cloudfund.utils.MyObjects.ifNotNull($expr$, v -> $END$)
+
+
+
 
 .ifnotblankyzj : Strings.ifNotBlank(expr, v -> )
-    STRING [com.hd123.cloud.pay.cloudfund.utils.Strings] -> com.hd123.cloud.pay.cloudfund.utils.Strings.ifNotBlank($expr$, v -> $END$)
-
-.aesencrypt2yzj : AesUtil.decrypt2()
-    STRING [com.hd123.cloud.pay.cloudfund.utils.AesUtil] -> com.hd123.cloud.pay.cloudfund.utils.AesUtil.encrypt2($expr$)
-
-.aesdecrypt2yzj : AesUtil.decrypt2()
-    STRING [com.hd123.cloud.pay.cloudfund.utils.AesUtil] -> com.hd123.cloud.pay.cloudfund.utils.AesUtil.decrypt2($expr$)
-
-.convertyzj : Lists.convert(expr, e -> )
-    java.util.List [com.hd123.cloud.pay.cloudfund.utils.Lists] -> com.hd123.cloud.pay.cloudfund.utils.Lists.convert($expr$, e -> $END$)
-
-.optconvertyzj : Lists.optConvert(expr, e -> )
-    java.util.List [com.hd123.cloud.pay.cloudfund.utils.Lists] -> com.hd123.cloud.pay.cloudfund.utils.Lists.optConvert($expr$, e -> $END$)
-
-.firstyzj : Lists.first()
-    java.util.List [com.hd123.cloud.pay.cloudfund.utils.Lists] -> com.hd123.cloud.pay.cloudfund.utils.Lists.first2($expr$);
-
-.lastyzj : Lists.last()
-    java.util.List [com.hd123.cloud.pay.cloudfund.utils.Lists] -> com.hd123.cloud.pay.cloudfund.utils.Lists.last($expr$);
+  STRING [com.hd123.cloud.pay.cloudfund.utils.Strings] -> com.hd123.cloud.pay.cloudfund.utils.Strings.ifNotBlank($expr$, v -> $END$)
 
 .formatyzj : Strings.format()
-    java.lang.String [com.hd123.cloud.pay.cloudfund.utils.Strings] -> com.hd123.cloud.pay.cloudfund.utils.Strings.format($expr$,$END$)
+  java.lang.String [com.hd123.cloud.pay.cloudfund.utils.Strings] -> com.hd123.cloud.pay.cloudfund.utils.Strings.format($expr$,$END$)
+
+
+
+
+
+
+.aesencrypt2yzj : AesUtil.decrypt2()
+  STRING [com.hd123.cloud.pay.cloudfund.utils.AesUtil] -> com.hd123.cloud.pay.cloudfund.utils.AesUtil.encrypt2($expr$)
+
+.aesdecrypt2yzj : AesUtil.decrypt2()
+  STRING [com.hd123.cloud.pay.cloudfund.utils.AesUtil] -> com.hd123.cloud.pay.cloudfund.utils.AesUtil.decrypt2($expr$)
+
+
+
+
+
+
+.convertyzj : Lists.convert(expr, e -> )
+  java.util.List [com.hd123.cloud.pay.cloudfund.utils.Lists] -> com.hd123.cloud.pay.cloudfund.utils.Lists.convert($expr$, e -> $END$)
+
+.optconvertyzj : Lists.optConvert(expr, e -> )
+  java.util.List [com.hd123.cloud.pay.cloudfund.utils.Lists] -> com.hd123.cloud.pay.cloudfund.utils.Lists.optConvert($expr$, e -> $END$)
+
+.firstyzj : Lists.first()
+  java.util.List [com.hd123.cloud.pay.cloudfund.utils.Lists] -> com.hd123.cloud.pay.cloudfund.utils.Lists.first2($expr$);
+
+.lastyzj : Lists.last()
+  java.util.List [com.hd123.cloud.pay.cloudfund.utils.Lists] -> com.hd123.cloud.pay.cloudfund.utils.Lists.last($expr$);
+
+.safestreamyzj : Convert List to safe stream
+  java.util.List [com.hd123.cloud.pay.cloudfund.utils.Lists] -> com.hd123.cloud.pay.cloudfund.utils.Lists.stream($expr$)$END$
+
+
+
+
+
 
 .datetimeyzj : yyyy-MM-dd HH:mm:ss
-    java.util.Date [com.hd123.cloud.pay.cloudfund.utils.DateConverterEnum] -> com.hd123.cloud.pay.cloudfund.utils.DateConverterEnum.YMD_HMS.format($expr$)
-    java.lang.String [com.hd123.cloud.pay.cloudfund.utils.DateConverterEnum] -> com.hd123.cloud.pay.cloudfund.utils.DateConverterEnum.parseToDate($expr$)
+  java.util.Date [com.hd123.cloud.pay.cloudfund.utils.DateConverterEnum] -> com.hd123.cloud.pay.cloudfund.utils.DateConverterEnum.YMD_HMS.format($expr$)
+  java.lang.String [com.hd123.cloud.pay.cloudfund.utils.DateConverterEnum] -> com.hd123.cloud.pay.cloudfund.utils.DateConverterEnum.parseToDate($expr$)
 
 .dateyzj : yyyy-MM-dd
-    java.util.Date [com.hd123.cloud.pay.cloudfund.utils.DateConverterEnum] -> com.hd123.cloud.pay.cloudfund.utils.DateConverterEnum.YMD.format($expr$)
-    java.lang.String [com.hd123.cloud.pay.cloudfund.utils.DateConverterEnum] -> com.hd123.cloud.pay.cloudfund.utils.DateConverterEnum.parseToDate($expr$)
+  java.util.Date [com.hd123.cloud.pay.cloudfund.utils.DateConverterEnum] -> com.hd123.cloud.pay.cloudfund.utils.DateConverterEnum.YMD.format($expr$)
+  java.lang.String [com.hd123.cloud.pay.cloudfund.utils.DateConverterEnum] -> com.hd123.cloud.pay.cloudfund.utils.DateConverterEnum.parseToDate($expr$)
 
 .datetimesyzj : yyyy-MM-dd HH:mm:ss.SSS
-    java.util.Date [com.hd123.cloud.pay.cloudfund.utils.DateConverterEnum] -> com.hd123.cloud.pay.cloudfund.utils.DateConverterEnum.YMD_HMS_S.format($expr$)
-    java.lang.String [com.hd123.cloud.pay.cloudfund.utils.DateConverterEnum] -> com.hd123.cloud.pay.cloudfund.utils.DateConverterEnum.parseToDate($expr$)
+  java.util.Date [com.hd123.cloud.pay.cloudfund.utils.DateConverterEnum] -> com.hd123.cloud.pay.cloudfund.utils.DateConverterEnum.YMD_HMS_S.format($expr$)
+  java.lang.String [com.hd123.cloud.pay.cloudfund.utils.DateConverterEnum] -> com.hd123.cloud.pay.cloudfund.utils.DateConverterEnum.parseToDate($expr$)
+
+
+
+
+
 
 .ordefaultyzj : MyObjects.orDefault(T,() -> T)
-    ANY [com.hd123.cloud.pay.cloudfund.utils.MyObjects] -> com.hd123.cloud.pay.cloudfund.utils.MyObjects.orDefault($expr$, () -> $END$)
+  ANY [com.hd123.cloud.pay.cloudfund.utils.MyObjects] -> com.hd123.cloud.pay.cloudfund.utils.MyObjects.orDefault($expr$, () -> $END$)
+
+.ifnotnullyzj : MyObjects.ifNotNull(expr,v -> )
+  ANY [com.hd123.cloud.pay.cloudfund.utils.MyObjects] -> com.hd123.cloud.pay.cloudfund.utils.MyObjects.ifNotNull($expr$, v -> $END$)
+
+
+
+
+
 
 .okrespyzj : RSResp.ok()
   ANY [com.hd123.cloud.pay.cloudfund.api.base.RSResp] -> return com.hd123.cloud.pay.cloudfund.api.base.RSResp.ok($expr$);
@@ -65,16 +100,27 @@
 .errorrespyzj : RSResp.err()
   ANY [com.hd123.cloud.pay.cloudfund.api.base.RSResp] -> return com.hd123.cloud.pay.cloudfund.api.base.RSResp.err($expr$);
 
+
+
+
+
 .bizerrorthrowyzj : throw BizException.of()
   java.lang.String [com.hd123.cloud.pay.cloudfund.exception.BizException] -> throw BizException.of($expr$);$END$ 
   com.hd123.cloud.pay.cloudfund.api.base.exception.ApiErrorCodeEnum [com.hd123.cloud.pay.cloudfund.exception.BizException] -> throw BizException.of($expr$);$END$ 
   java.lang.Throwable [com.hd123.cloud.pay.cloudfund.exception.BizException] -> throw BizException.of($expr$);$END$ 
-
 
 .bizerroryzj : BizException.of()
   java.lang.String [com.hd123.cloud.pay.cloudfund.exception.BizException] -> BizException.of($expr$)$END$ 
   com.hd123.cloud.pay.cloudfund.api.base.exception.ApiErrorCodeEnum  [com.hd123.cloud.pay.cloudfund.exception.BizException] -> BizException.of($expr$)$END$ 
   java.lang.Throwable [com.hd123.cloud.pay.cloudfund.exception.BizException] -> BizException.of($expr$)$END$ 
 
+
+
+
+
+
 .isemptyzyj : QueryResult.data is empty
-  com.hd123.rumba.commons.biz.query.QueryResult [org.apache.commons.collections4.CollectionUtils] -> CollectionUtils.isEmpty($expr$.getRecords());$END$
+  com.hd123.rumba.commons.biz.query.QueryResult [org.apache.commons.collections4.CollectionUtils] -> org.apache.commons.collections4.CollectionUtils.isEmpty($expr$.getRecords());$END$
+
+.ifnotemptyyzj : Collection
+  java.util.Collection [com.hd123.cloud.pay.cloudfund.utils.common.collection.CollectionUtils] -> com.hd123.cloud.pay.cloudfund.utils.common.collection.CollectionUtils.ifNotEmpty($expr$, v -> $END$)
