@@ -1,4 +1,4 @@
-# Template for heading project
+## com.hd123.cloud.pay.cloudfund.utils.base.BiCode ##
 .issuccessyzj : BiCode.SUCCESS.is()
   com.hd123.cloud.pay.cloudfund.utils.base.BiResult [com.hd123.cloud.pay.cloudfund.utils.base.BiCode] -> com.hd123.cloud.pay.cloudfund.utils.base.BiCode.SUCCESS.is($expr$.code)$END$
 
@@ -12,7 +12,7 @@
 
 
 
-
+## com.hd123.cloud.pay.cloudfund.utils.date.DateUtil ##
 .startdayyzj : Start of the day of date
   java.util.Date [com.hd123.cloud.pay.cloudfund.utils.date.DateUtil] -> com.hd123.cloud.pay.cloudfund.utils.date.DateUtil.getStartOfDay($expr$)$END$
 
@@ -23,7 +23,7 @@
 
 
 
-
+## com.hd123.cloud.pay.cloudfund.utils.Strings##
 .ifnotblankyzj : Strings.ifNotBlank(expr, v -> )
   STRING [com.hd123.cloud.pay.cloudfund.utils.Strings] -> com.hd123.cloud.pay.cloudfund.utils.Strings.ifNotBlank($expr$, v -> $END$)
 
@@ -34,7 +34,7 @@
 
 
 
-
+## com.hd123.cloud.pay.cloudfund.utils.AesUtil##
 .aesencrypt2yzj : AesUtil.decrypt2()
   STRING [com.hd123.cloud.pay.cloudfund.utils.AesUtil] -> com.hd123.cloud.pay.cloudfund.utils.AesUtil.encrypt2($expr$)
 
@@ -45,7 +45,7 @@
 
 
 
-
+## com.hd123.cloud.pay.cloudfund.utils.Lists##
 .convertyzj : Lists.convert(expr, e -> )
   java.util.List [com.hd123.cloud.pay.cloudfund.utils.Lists] -> com.hd123.cloud.pay.cloudfund.utils.Lists.convert($expr$, e -> $END$)
 
@@ -66,6 +66,7 @@
 
 
 
+## com.hd123.cloud.pay.cloudfund.utils.DateConverterEnum##
 .datetimeyzj : yyyy-MM-dd HH:mm:ss
   java.util.Date [com.hd123.cloud.pay.cloudfund.utils.DateConverterEnum] -> com.hd123.cloud.pay.cloudfund.utils.DateConverterEnum.YMD_HMS.format($expr$)
   java.lang.String [com.hd123.cloud.pay.cloudfund.utils.DateConverterEnum] -> com.hd123.cloud.pay.cloudfund.utils.DateConverterEnum.parseToDate($expr$)
@@ -82,7 +83,7 @@
 
 
 
-
+## com.hd123.cloud.pay.cloudfund.utils.MyObjects ##
 .ordefaultyzj : MyObjects.orDefault(T,() -> T)
   ANY [com.hd123.cloud.pay.cloudfund.utils.MyObjects] -> com.hd123.cloud.pay.cloudfund.utils.MyObjects.orDefault($expr$, () -> $END$)
 
@@ -93,7 +94,7 @@
 
 
 
-
+## com.hd123.cloud.pay.cloudfund.api.base.RSResp ##
 .okrespyzj : RSResp.ok()
   ANY [com.hd123.cloud.pay.cloudfund.api.base.RSResp] -> return com.hd123.cloud.pay.cloudfund.api.base.RSResp.ok($expr$);
 
@@ -103,7 +104,7 @@
 
 
 
-
+## com.hd123.cloud.pay.cloudfund.exception.BizException ##
 .bizerrorthrowyzj : throw BizException.of()
   java.lang.String [com.hd123.cloud.pay.cloudfund.exception.BizException] -> throw BizException.of($expr$);$END$ 
   com.hd123.cloud.pay.cloudfund.api.base.exception.ApiErrorCodeEnum [com.hd123.cloud.pay.cloudfund.exception.BizException] -> throw BizException.of($expr$);$END$ 
@@ -118,9 +119,15 @@
 
 
 
-
+## org.apache.commons.collections4.CollectionUtils ##
 .isemptyzyj : QueryResult.data is empty
   com.hd123.rumba.commons.biz.query.QueryResult [org.apache.commons.collections4.CollectionUtils] -> org.apache.commons.collections4.CollectionUtils.isEmpty($expr$.getRecords());$END$
 
+
+
+
+
+
+## com.hd123.cloud.pay.cloudfund.utils.common.collection.CollectionUtils ##
 .ifnotemptyyzj : Collection
   java.util.Collection [com.hd123.cloud.pay.cloudfund.utils.common.collection.CollectionUtils] -> com.hd123.cloud.pay.cloudfund.utils.common.collection.CollectionUtils.ifNotEmpty($expr$, v -> $END$)
