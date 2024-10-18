@@ -39,10 +39,10 @@
 
 ## com.hd123.cloud.pay.cloudfund.utils.AesUtil##
 .aesencrypt2yzj : AesUtil.decrypt2()
-  STRING [com.hd123.cloud.pay.cloudfund.utils.AesUtil] -> com.hd123.cloud.pay.cloudfund.utils.AesUtil.encrypt2($expr$)
+  java.lang.String [com.hd123.cloud.pay.cloudfund.utils.AesUtil] -> com.hd123.cloud.pay.cloudfund.utils.AesUtil.encrypt2($expr$)
 
 .aesdecrypt2yzj : AesUtil.decrypt2()
-  STRING [com.hd123.cloud.pay.cloudfund.utils.AesUtil] -> com.hd123.cloud.pay.cloudfund.utils.AesUtil.decrypt2($expr$)
+  java.lang.String [com.hd123.cloud.pay.cloudfund.utils.AesUtil] -> com.hd123.cloud.pay.cloudfund.utils.AesUtil.decrypt2($expr$)
 
 
 
