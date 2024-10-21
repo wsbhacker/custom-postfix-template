@@ -28,7 +28,7 @@
 
 ## com.hd123.cloud.pay.cloudfund.utils.Strings##
 .ifnotblankyzj : Strings.ifNotBlank(expr, v -> )
-  STRING [com.hd123.cloud.pay.cloudfund.utils.Strings] -> com.hd123.cloud.pay.cloudfund.utils.Strings.ifNotBlank($expr$, v -> $END$)
+  java.lang.String [com.hd123.cloud.pay.cloudfund.utils.Strings] -> com.hd123.cloud.pay.cloudfund.utils.Strings.ifNotBlank($expr$, v -> $END$)
 
 .formatyzj : Strings.format()
   java.lang.String [com.hd123.cloud.pay.cloudfund.utils.Strings] -> com.hd123.cloud.pay.cloudfund.utils.Strings.format($expr$,$END$)
