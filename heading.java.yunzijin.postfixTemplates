@@ -150,4 +150,10 @@
 
 ## com.hd123.cloud.pay.cloudfund.api.base.util.bean.EnumMatch ##
 .matchyzj : EnumMatch.match()
-  com.hd123.cloud.pay.cloudfund.api.base.util.bean.EnumMatch -> $tyep*:castToLeftSideType()$.$END$.match($expr$)
+  com.hd123.cloud.pay.cloudfund.api.base.util.bean.EnumMatch -> $tyep*:expressionType(expr)$.$END$.match($expr$)
+
+
+## com.hd123.cloud.pay.cloudfund.utils.Collections ##
+
+.mapyzj : Collections.map
+  java.util.Collection [com.hd123.cloud.pay.cloudfund.utils.Collections] -> com.hd123.cloud.pay.cloudfund.utils.Collections.map($expr$, v -> $END$)

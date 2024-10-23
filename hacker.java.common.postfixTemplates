@@ -15,7 +15,7 @@
   NOT_PRIMITIVE -> java.util.Objects.isNull($expr$)$END$
 
 
-
-
+.val : final T name = expr
+	NON_VOID → final $type*:expressionType(expr))$ $var:suggestVariableName()$ = $expr$;
 
 
