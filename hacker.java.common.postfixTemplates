@@ -6,25 +6,25 @@
     $END$\
   }
 
-.if : boolean if 
+.ifjv : boolean if 
   BOOLEAN -> if ($expr$) {\
     $END$\
   }
 
-.else : boolean if !expr
+.elsejv : boolean if !expr
   BOOLEAN -> if (!$expr$) {\
     $END$\
   }
 
 ## java.util.Objects ##
-.notnull : java util Objects.nonNull
+.notnulljv : java util Objects.nonNull
   NOT_PRIMITIVE -> java.util.Objects.nonNull($expr$)$END$
 
-.isnull : java util Objects.isNull
+.isnulljv : java util Objects.isNull
   NOT_PRIMITIVE -> java.util.Objects.isNull($expr$)$END$
 
 
-.val : final T name = expr
+.valjv : final T name = expr
 	NON_VOID → final $type*:expressionType(expr))$ $var:suggestVariableName()$ = $expr$;
 
 
