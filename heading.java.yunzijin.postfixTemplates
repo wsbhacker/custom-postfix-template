@@ -157,3 +157,5 @@
 
 .mapyzj : Collections.map
   java.util.Collection [com.hd123.cloud.pay.cloudfund.utils.Collections] -> com.hd123.cloud.pay.cloudfund.utils.Collections.map($expr$, v -> $END$)
+.optmapyzj : Collections.optmap
+  java.util.Collection [com.hd123.cloud.pay.cloudfund.utils.Collections] -> com.hd123.cloud.pay.cloudfund.utils.Collections.optMap($expr$, v -> $END$)
