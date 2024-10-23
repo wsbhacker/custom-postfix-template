@@ -6,12 +6,21 @@
     $END$\
   }
 
+.if : boolean if 
+  BOOLEAN -> if ($expr$) {\
+    $END$\
+  }
+
+.else : boolean if !expr
+  BOOLEAN -> if (!$expr$) {\
+    $END$\
+  }
 
 ## java.util.Objects ##
-.notnulljava : java util Objects.nonNull
+.notnull : java util Objects.nonNull
   NOT_PRIMITIVE -> java.util.Objects.nonNull($expr$)$END$
 
-.isnulljava : java util Objects.isNull
+.isnull : java util Objects.isNull
   NOT_PRIMITIVE -> java.util.Objects.isNull($expr$)$END$
 
 
