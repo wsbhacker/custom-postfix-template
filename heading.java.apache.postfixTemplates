@@ -8,10 +8,10 @@
 .isanyemptyapc : apache is blank set
   java.lang.CharSequence [org.apache.commons.lang3.StringUtils] -> org.apache.commons.lang3.StringUtils.isAnyEmpty($expr$$END$)
 
-.isallempty : apache is all empty set
+.isallemptyapc : apache is all empty set
   java.lang.CharSequence [org.apache.commons.lang3.StringUtils] -> org.apache.commons.lang3.StringUtils.isAllEmpty($expr$$END$)
 
-.isnotempty : apache is not empty set
+.isnotemptyapc : apache is not empty set
   java.util.Collection [org.apache.commons.collections4.CollectionUtils] -> org.apache.commons.collections4.CollectionUtils.isNotEmpty($expr$)$END$
   java.lang.CharSequence [org.apache.commons.lang3.StringUtils] -> org.apache.commons.lang3.StringUtils.isNotEmpty($expr$)$END$
 
@@ -20,6 +20,9 @@
 
 .isblankapc : apache is blank set
   java.lang.CharSequence [org.apache.commons.lang3.StringUtils] -> org.apache.commons.lang3.StringUtils.isBlank($expr$)$END$
+
+.isnotblankapc : apache is not blank set
+  java.lang.CharSequence [org.apache.commons.lang3.StringUtils] -> org.apache.commons.lang3.StringUtils.isNotBlank($expr$)$END$
 
 .isanyblankapc : apache is any blank set
   java.lang.CharSequence [org.apache.commons.lang3.StringUtils] -> org.apache.commons.lang3.StringUtils.isAnyBlank($expr$$END$)
