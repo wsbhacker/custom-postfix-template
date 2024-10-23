@@ -159,3 +159,15 @@
   java.util.Collection [com.hd123.cloud.pay.cloudfund.utils.Collections] -> com.hd123.cloud.pay.cloudfund.utils.Collections.map($expr$, v -> $END$)
 .optmapyzj : Collections.optmap
   java.util.Collection [com.hd123.cloud.pay.cloudfund.utils.Collections] -> com.hd123.cloud.pay.cloudfund.utils.Collections.optMap($expr$, v -> $END$)
+
+
+
+
+
+
+
+## com.hd123.cloud.pay.cloudfund.utils.OptWrapper ##
+
+.optwrapperyzj : OptWrapper
+  java.util.Optional -> com.hd123.cloud.pay.cloudfund.utils.OptWrapper.of($expr$)$END$
+  NOT_PRIMITIVE -> com.hd123.cloud.pay.cloudfund.utils.OptWrapper.ofNullable($expr$)$END$
