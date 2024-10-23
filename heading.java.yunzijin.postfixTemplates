@@ -134,3 +134,12 @@
 ## com.hd123.cloud.pay.cloudfund.utils.common.collection.CollectionUtils ##
 .ifnotemptyyzj : Collection
   java.util.Collection [com.hd123.cloud.pay.cloudfund.utils.common.collection.CollectionUtils] -> com.hd123.cloud.pay.cloudfund.utils.common.collection.CollectionUtils.ifNotEmpty($expr$, v -> $END$)
+
+
+
+
+
+
+## com.hd123.cloud.pay.cloudfund.api.base.util.bean.EnumMatch ##
+.matchyzj : EnumMatch.match()
+  com.hd123.cloud.pay.cloudfund.api.base.util.bean.EnumMatch -> $tyep*:castToLeftSideType()$.$END$.match($expr$)
