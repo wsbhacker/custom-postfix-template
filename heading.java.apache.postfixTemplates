@@ -1,0 +1,31 @@
+## java.apache ##
+
+
+.isemptyapc : apache is empty set
+  java.util.Collection [org.apache.commons.collections4.CollectionUtils] -> org.apache.commons.collections4.CollectionUtils.isEmpty($expr$)$END$
+  java.lang.CharSequence [org.apache.commons.lang3.StringUtils] -> org.apache.commons.lang3.StringUtils.isEmpty($expr$)$END$
+
+.isanyemptyapc : apache is blank set
+  java.lang.CharSequence [org.apache.commons.lang3.StringUtils] -> org.apache.commons.lang3.StringUtils.isAnyEmpty($expr$$END$)
+
+.isallempty : apache is all empty set
+  java.lang.CharSequence [org.apache.commons.lang3.StringUtils] -> org.apache.commons.lang3.StringUtils.isAllEmpty($expr$$END$)
+
+.isnotempty : apache is not empty set
+  java.util.Collection [org.apache.commons.collections4.CollectionUtils] -> org.apache.commons.collections4.CollectionUtils.isNotEmpty($expr$)$END$
+  java.lang.CharSequence [org.apache.commons.lang3.StringUtils] -> org.apache.commons.lang3.StringUtils.isNotEmpty($expr$)$END$
+
+.isnoneemptyapc : apache is all not empty set
+  java.lang.CharSequence [org.apache.commons.lang3.StringUtils] -> org.apache.commons.lang3.StringUtils.isNoneEmpty($expr$$END$)
+
+.isblankapc : apache is blank set
+  java.lang.CharSequence [org.apache.commons.lang3.StringUtils] -> org.apache.commons.lang3.StringUtils.isBlank($expr$)$END$
+
+.isanyblankapc : apache is any blank set
+  java.lang.CharSequence [org.apache.commons.lang3.StringUtils] -> org.apache.commons.lang3.StringUtils.isAnyBlank($expr$$END$)
+
+.isallblankapc : apache is all blank set
+  java.lang.CharSequence [org.apache.commons.lang3.StringUtils] -> org.apache.commons.lang3.StringUtils.isAllBlank($expr$$END$)
+
+.isnoneblankapc : apache is all not blank set
+  java.lang.CharSequence [org.apache.commons.lang3.StringUtils] -> org.apache.commons.lang3.StringUtils.isNoneBlank($expr$$END$)

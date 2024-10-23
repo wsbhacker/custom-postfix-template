@@ -33,6 +33,14 @@
 .formatyzj : Strings.format()
   java.lang.String [com.hd123.cloud.pay.cloudfund.utils.Strings] -> com.hd123.cloud.pay.cloudfund.utils.Strings.format($expr$,$END$)
 
+.stringordefaultyzj : Strings.stringOrDefault()
+  java.lang.String [com.hd123.cloud.pay.cloudfund.utils.Strings] -> com.hd123.cloud.pay.cloudfund.utils.Strings.stringOrDefault($expr$,$END$)
+
+.oremptyyzj : Strings.orEmpty()
+  java.lang.String [com.hd123.cloud.pay.cloudfund.utils.Strings] -> com.hd123.cloud.pay.cloudfund.utils.Strings.orEmpty($expr$)$END$
+
+.connect : Strings.connect()
+  java.lang.String [com.hd123.cloud.pay.cloudfund.utils.Strings] -> com.hd123.cloud.pay.cloudfund.utils.Strings.connect($expr$,$END$)
 
 
 
