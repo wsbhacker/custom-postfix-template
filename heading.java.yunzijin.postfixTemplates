@@ -187,3 +187,13 @@
 
 
 
+## com.hd123.cloud.pay.cloudfund.param.bill.zx.BillChannelEnum ##
+
+.parseyzj : BillChannelEnum
+  com.hd123.cloud.pay.cloudfund.api.front.consts.PayChannelEnum [com.hd123.cloud.pay.cloudfund.param.bill.zx.BillChannelEnum] -> BillChannelEnum.parseBy($expr$)$END$
+  com.hd123.cloud.pay.cloudfund.api.front.consts.TakeOutOrderTypeEnum [com.hd123.cloud.pay.cloudfund.param.bill.zx.BillChannelEnum] -> BillChannelEnum.parseBy($expr$)$END$
+
+
+.optparseyzj : BillChannelEnum
+  com.hd123.cloud.pay.cloudfund.api.front.consts.PayChannelEnum [com.hd123.cloud.pay.cloudfund.param.bill.zx.BillChannelEnum] -> BillChannelEnum.optParseBy($expr$)$END$
+  com.hd123.cloud.pay.cloudfund.api.front.consts.TakeOutOrderTypeEnum [com.hd123.cloud.pay.cloudfund.param.bill.zx.BillChannelEnum] -> BillChannelEnum.optParseBy($expr$)$END$
