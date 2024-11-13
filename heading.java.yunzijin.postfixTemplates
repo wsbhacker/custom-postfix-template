@@ -101,6 +101,13 @@
 .ifnotnullyzj : MyObjects.ifNotNull(expr,v -> )
   ANY [com.hd123.cloud.pay.cloudfund.utils.MyObjects] -> com.hd123.cloud.pay.cloudfund.utils.MyObjects.ifNotNull($expr$, v -> $END$)
 
+.nullablematchyzj : null to true or false
+  NOT_PRIMITIVE [com.hd123.cloud.pay.cloudfund.utils.MyObjects] -> MyObjects.nullableMatch($expr$, v -> $END$)
+
+.notnullmatchyzj : null to false or true
+  NOT_PRIMITIVE [com.hd123.cloud.pay.cloudfund.utils.MyObjects] -> MyObjects.notnullMatch($expr$, v -> $END$)
+  
+
 
 
 
@@ -154,9 +161,15 @@
 
 
 ## com.hd123.cloud.pay.cloudfund.utils.Collections ##
+## com.hd123.cloud.pay.cloudfund.utils.MyObjects ##
 
-.mapyzj : Collections.map
+.mapyzj : Collections,MyObjects
   java.util.Collection [com.hd123.cloud.pay.cloudfund.utils.Collections] -> com.hd123.cloud.pay.cloudfund.utils.Collections.map($expr$, v -> $END$)
+  NOT_PRIMITIVE [com.hd123.cloud.pay.cloudfund.utils.MyObjects] -> MyObjects.map($expr$, v -> $END$)
+
+
+
+
 .optmapyzj : Collections.optmap
   java.util.Collection [com.hd123.cloud.pay.cloudfund.utils.Collections] -> com.hd123.cloud.pay.cloudfund.utils.Collections.optMap($expr$, v -> $END$)
 
@@ -171,3 +184,6 @@
 .optwrapperyzj : OptWrapper
   java.util.Optional -> com.hd123.cloud.pay.cloudfund.utils.OptWrapper.of($expr$)$END$
   NOT_PRIMITIVE -> com.hd123.cloud.pay.cloudfund.utils.OptWrapper.ofNullable($expr$)$END$
+
+
+
