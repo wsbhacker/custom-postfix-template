@@ -71,6 +71,7 @@
 
 .safestreamyzj : Convert List to safe stream
   java.util.List [com.hd123.cloud.pay.cloudfund.utils.Lists] -> com.hd123.cloud.pay.cloudfund.utils.Lists.stream($expr$)$END$
+  ARRAY [com.hd123.cloud.pay.cloudfund.utils.Arrays] -> com.hd123.cloud.pay.cloudfund.utils.Arrays.stream($expr$)$END$
 
 
 
