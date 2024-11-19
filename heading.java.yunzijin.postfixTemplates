@@ -150,6 +150,8 @@
 ## com.hd123.cloud.pay.cloudfund.utils.common.collection.CollectionUtils ##
 .ifnotemptyyzj : Collection
   java.util.Collection [com.hd123.cloud.pay.cloudfund.utils.common.collection.CollectionUtils] -> com.hd123.cloud.pay.cloudfund.utils.common.collection.CollectionUtils.ifNotEmpty($expr$, v -> $END$)
+  com.google.common.collect.ImmutableSet [com.hd123.cloud.pay.cloudfund.utils.common.collection.CollectionUtils] -> com.hd123.cloud.pay.cloudfund.utils.common.collection.CollectionUtils.ifNotEmpty($expr$, v -> $END$)
+  com.google.common.collect.ImmutableList [com.hd123.cloud.pay.cloudfund.utils.common.collection.CollectionUtils] -> com.hd123.cloud.pay.cloudfund.utils.common.collection.CollectionUtils.ifNotEmpty($expr$, v -> $END$)
 
 
 
