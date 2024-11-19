@@ -1,8 +1,16 @@
 ## java.spring ##
 
 
-
-
 ## org.springframework.util.Assert ##
 .assertistruesp : spring Assert isTrue
   BOOLEAN [org.springframework.util.Assert] -> org.springframework.util.Assert.isTrue($expr$,$END$);
+
+.assertnotnullsp : spring Assert notNull
+  NOT_PRIMITIVE [org.springframework.util.Assert] -> org.springframework.util.Assert.notNull($expr$, "$END$");
+
+.notemptysp : spring Assert notEmpty
+  java.util.Collection [org.springframework.util.Assert] -> org.springframework.util.Assert.notEmpty($expr$, "$END$");
+  java.util.Map [org.springframework.util.Assert] -> org.springframework.util.Assert.notEmpty($expr$, "$END$");
+
+.assertstatesp : spring Assert state
+  BOOLEAN [org.springframework.util.Assert] -> org.springframework.util.Assert.notEmpty($expr$, "$END$");
