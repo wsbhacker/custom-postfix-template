@@ -13,4 +13,4 @@
   java.util.Map [org.springframework.util.Assert] -> org.springframework.util.Assert.notEmpty($expr$, "$END$");
 
 .assertstatesp : spring Assert state
-  BOOLEAN [org.springframework.util.Assert] -> org.springframework.util.Assert.notEmpty($expr$, "$END$");
+  BOOLEAN [org.springframework.util.Assert] -> org.springframework.util.Assert.state($expr$, "$END$");
