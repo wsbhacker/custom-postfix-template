@@ -28,3 +28,5 @@
 	NON_VOID → final $type*:expressionType(expr))$ $var:suggestVariableName()$ = $expr$;
 
 
+.returnco : return xx
+  ANY -> return $expr$;$END$
