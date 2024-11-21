@@ -30,3 +30,17 @@
 
 .returnco : return xx
   ANY -> return $expr$;$END$
+
+.pfco : private final
+  CLASS -> private final $expr$ $END$;
+
+.psfco : private static final
+  CLASS -> private static final $expr$ $END$;
+
+.pufco : public final
+  CLASS -> public final $expr$ $END$;
+
+.pusfco : public static final
+  CLASS -> public static final $expr$ $END$;
+
+
