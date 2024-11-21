@@ -73,6 +73,9 @@
   java.util.List [com.hd123.cloud.pay.cloudfund.utils.Lists] -> com.hd123.cloud.pay.cloudfund.utils.Lists.stream($expr$)$END$
   ARRAY [com.hd123.cloud.pay.cloudfund.utils.Arrays] -> com.hd123.cloud.pay.cloudfund.utils.Arrays.stream($expr$)$END$
 
+.distinctyzj : distinct
+  java.util.List [com.hd123.cloud.pay.cloudfund.utils.Lists] -> com.hd123.cloud.pay.cloudfund.utils.Lists.distinctBy($expr$, e -> $END$)
+
 
 
 
@@ -200,3 +203,6 @@
 .optparseyzj : BillChannelEnum
   com.hd123.cloud.pay.cloudfund.api.front.consts.PayChannelEnum [com.hd123.cloud.pay.cloudfund.param.bill.zx.BillChannelEnum] -> BillChannelEnum.optParseBy($expr$)$END$
   com.hd123.cloud.pay.cloudfund.api.front.consts.TakeOutOrderTypeEnum [com.hd123.cloud.pay.cloudfund.param.bill.zx.BillChannelEnum] -> BillChannelEnum.optParseBy($expr$)$END$
+
+
+
