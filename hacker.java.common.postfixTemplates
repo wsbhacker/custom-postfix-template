@@ -44,4 +44,4 @@
   CLASS -> public static final $expr$ $END$;
 
 .finalco : final class 
-  CLASS -> final $expr$ $END$
+  ANY -> final $expr$ $END$
