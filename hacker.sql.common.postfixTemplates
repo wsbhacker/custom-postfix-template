@@ -1,0 +1,9 @@
+## sql.common ##
+
+.uuidco
+  STRING -> uuid()
+
+.datetimeco
+  STRING -> sysdate()
+
+
