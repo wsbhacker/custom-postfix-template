@@ -1,9 +1,9 @@
 ## sql.common ##
 
 .uuidco
-  STRING -> uuid()
+  STRING -> uuid($expr$)
 
 .datetimeco
-  STRING -> sysdate()
+  STRING -> sysdate($expr$)
 
 
