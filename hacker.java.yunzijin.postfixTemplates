@@ -205,4 +205,8 @@
   com.hd123.cloud.pay.cloudfund.api.front.consts.TakeOutOrderTypeEnum [com.hd123.cloud.pay.cloudfund.param.bill.zx.BillChannelEnum] -> BillChannelEnum.optParseBy($expr$)$END$
 
 
-
+.iftrueyzj
+  BOOLEAN -> [com.hd123.cloud.pay.cloudfund.utils.Booleans] -> Booleans.ifTrue($expr$, () -> $END$);
+.iffalseyzj
+  BOOLEAN -> [com.hd123.cloud.pay.cloudfund.utils.Booleans] -> Booleans.ifFalse($expr$, () -> $END$);
+  
