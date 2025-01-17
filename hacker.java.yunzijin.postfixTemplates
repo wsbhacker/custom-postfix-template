@@ -69,14 +69,15 @@
 .lastyzj : Lists.last()
   java.util.List [com.hd123.cloud.pay.cloudfund.utils.Lists] -> com.hd123.cloud.pay.cloudfund.utils.Lists.last($expr$);
 
-.safestreamyzj : Convert List to safe stream
+.streamyzj : Convert List to safe stream
   java.util.List [com.hd123.cloud.pay.cloudfund.utils.Lists] -> com.hd123.cloud.pay.cloudfund.utils.Lists.stream($expr$)$END$
   ARRAY [com.hd123.cloud.pay.cloudfund.utils.Arrays] -> com.hd123.cloud.pay.cloudfund.utils.Arrays.stream($expr$)$END$
 
 .distinctyzj : distinct
   java.util.List [com.hd123.cloud.pay.cloudfund.utils.Lists] -> com.hd123.cloud.pay.cloudfund.utils.Lists.distinctBy($expr$, e -> $END$)
 
-
+.sizeyzj : size
+  java.util.List [com.hd123.cloud.pay.cloudfund.utils.Lists] -> com.hd123.cloud.pay.cloudfund.utils.Lists.size($expr$)$END$
 
 
 
@@ -210,3 +211,9 @@
 .iffalseyzj
   BOOLEAN -> [com.hd123.cloud.pay.cloudfund.utils.Booleans] -> Booleans.ifFalse($expr$, () -> $END$);
   
+.unboxyzj
+  BOOLEAN -> [com.hd123.cloud.pay.cloudfund.utils.Boxing] -> Boxing.toBool($expr$)$END$
+  INT -> [com.hd123.cloud.pay.cloudfund.utils.Boxing] -> Boxing.toInt($expr$)$END$
+
+.indexforeachyzj
+  java.util.List [com.hd123.cloud.pay.cloudfund.utils.Lists] -> Lists.indexForeach($expr$, (i, e) -> $END$);
