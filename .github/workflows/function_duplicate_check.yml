@@ -17,4 +17,4 @@ jobs:
       - name: install dep
         run: npm install glob
       - name: run check
-        run: node ./.github/scripts/function_dup_check.js
+        run: node ./.github/scripts/function_dup_check.mjs
