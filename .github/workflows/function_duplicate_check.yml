@@ -15,4 +15,4 @@ jobs:
         uses: actions/setup-node@v4
       - run: echo 'github.action_path = ${{github.action_path}}'
       - name: run check
-        run: node ../scripts/function_dup_check.js
+        run: node ./.github/scripts/function_dup_check.js
