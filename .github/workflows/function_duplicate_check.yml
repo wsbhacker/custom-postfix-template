@@ -1,1 +1,18 @@
+name: function重复检查
+on:
+  push:
+    paths:
+      - '**.postfixTemplates'
+jobs:
+  function_name_check_job:
+    name: function name check job
+    runs-on: ubuntu-latest
+    container: 
+    steps:
+      - name: check out repo
+        uses: actions/checkout@v4
+      - name: set node version
+        uses: actions/setup-node@v4
+      - run: echo "github.workspace = ${{github.workspace}}"
+      - run: echo "github.path = ${{github.path}}"
 
