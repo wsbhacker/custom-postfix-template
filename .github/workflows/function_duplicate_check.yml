@@ -14,5 +14,7 @@ jobs:
       - name: set node version
         uses: actions/setup-node@v4
       - run: echo 'github.action_path = ${{github.action_path}}'
+      - name: install dep
+        run: npm install glob
       - name: run check
         run: node ./.github/scripts/function_dup_check.js
