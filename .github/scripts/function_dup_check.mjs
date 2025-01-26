@@ -1,5 +1,32 @@
 // 使用 ES 模块语法（需在 package.json 中设置 "type": "module"）
 import { glob } from "glob";
+import fs from "fs";
+import readline from "readline";
+
+let functionMap = new Map();
+
+async function analyzeFile(filePath) {
+  const fileStream = fs.createReadStream(filePath);
+  const rl = readline.createInterface({ input: fileStream });
+
+  let lineCount = 0;
+  for await (const line of rl) {
+    if (!line.startsWith(".")) {
+      continue;
+    }
+    let functionName = line.trim();
+    const endIndex = line.indexOf(":");
+    if (endIndex != -1) {
+      functionName = line.subString(0, endIndex).trim();
+    }
+  }
+  let fileList = functionMap.get(functionName);
+  if (!fileList) {
+    fileList = Array.of(filePath);
+  }
+  fileList.push(filePath);
+  functionMap.set(functionName, fileList);
+}
 
 // 获取当前目录下的所有 .txt 文件
 async function getAllFiles() {
@@ -19,7 +46,8 @@ async function getAllFiles() {
 // 执行函数
 function checkFiles() {
   const allFiles = getAllFiles();
-  console.log(allFiles);
+  allFiles.forEach((fp) => analyzeFile(fp));
+  console.log(functionMap);
 }
 
 checkFiles();
