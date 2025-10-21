@@ -220,4 +220,4 @@
 
 
 .sandboxyzj : sandbox
-  ANY [com.hd123.cloud.pay.cloudfund.utils.common.SandBox] -> SandBox.run2(() -> $expr$$END$);
+  ANY -> SandBox.run2(() -> $expr$$END$);
