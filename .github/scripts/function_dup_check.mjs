@@ -65,7 +65,9 @@ async function getAllFiles() {
   try {
     // 模式解释：
     // **/*.postfixTemplates 递归匹配所有子目录中的 .postfixTemplates 文件
-    const txtFiles = await glob("**/*.postfixTemplates", { absolute: false });
+    // *.postfixTemplates 匹配根目录中的 .postfixTemplates 文件
+    const globPattern = ["**/*.postfixTemplates", "*.postfixTemplates"];
+    const txtFiles = await glob(globPattern, { absolute: false });
     console.log("Found .postfixTemplates files:", txtFiles.length, "files");
     return txtFiles;
   } catch (err) {
