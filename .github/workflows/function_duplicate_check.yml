@@ -3,9 +3,6 @@ on:
   push:
     paths:
       - '**.postfixTemplates'
-  pull_request:
-    paths:
-      - '**.postfixTemplates'
   workflow_dispatch:
 jobs:
   function_name_check_job:
@@ -25,5 +22,5 @@ jobs:
         working-directory: .github/scripts
 
       - name: Run duplicate function check
-        run: npm run function_dup_check
+        run: npm run check-duplicates
         working-directory: .github/scripts
