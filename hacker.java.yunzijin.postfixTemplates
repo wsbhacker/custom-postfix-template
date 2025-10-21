@@ -219,5 +219,5 @@
   java.util.List [com.hd123.cloud.pay.cloudfund.utils.Lists] -> Lists.indexForeach($expr$, (i, e) -> $END$);
 
 
-.sandboxyzj
+.sandboxyzj : sandbox
   ANY [com.hd123.cloud.pay.cloudfund.utils.common.SandBox] -> SandBox.run2(() -> $expr$$END$);
