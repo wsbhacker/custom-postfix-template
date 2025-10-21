@@ -21,3 +21,4 @@ jobs:
 
       - name: Run duplicate function check
         run: npm run check-duplicates --prefix .github/scripts
+        working-directory: ${{ github.workspace }}
