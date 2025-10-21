@@ -1,8 +1,6 @@
 name: Function重复检查
 on:
   push:
-    paths:
-      - '**.postfixTemplates'
   workflow_dispatch:
 jobs:
   function_name_check_job:
