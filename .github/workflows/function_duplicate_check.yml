@@ -20,5 +20,5 @@ jobs:
         working-directory: .github/scripts
 
       - name: Run duplicate function check
-        run: npm run check-duplicates --prefix .github/scripts
+        run: npm .github/scripts/function_dup_check.mjs
         working-directory: ${{ github.workspace }}
