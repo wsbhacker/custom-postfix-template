@@ -3,18 +3,27 @@ on:
   push:
     paths:
       - '**.postfixTemplates'
+  pull_request:
+    paths:
+      - '**.postfixTemplates'
   workflow_dispatch:
 jobs:
   function_name_check_job:
     name: function name check job
     runs-on: ubuntu-latest
     steps:
-      - name: check out repo
+      - name: Check out repository
         uses: actions/checkout@v4
-      - name: set node version
-        uses: actions/setup-node@v4 
-      - run: echo 'github.action_path = ${{github.action_path}}'
-      - name: install dep
-        run: npm install glob
-      - name: run check
-        run: node ./.github/scripts/function_dup_check.mjs
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          
+      - name: Install dependencies
+        run: npm ci
+        working-directory: .github/scripts
+        
+      - name: Run duplicate function check
+        run: npm run check-duplicates
+        working-directory: .github/scripts

@@ -1,0 +1,16 @@
+{
+  "name": "github-action-scripts",
+  "version": "1.0.0",
+  "description": "Scripts for GitHub Actions workflows",
+  "main": "function_dup_check.mjs",
+  "type": "module",
+  "scripts": {
+    "check-duplicates": "node function_dup_check.mjs"
+  },
+  "dependencies": {
+    "glob": "^10.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
