@@ -206,16 +206,16 @@
   com.hd123.cloud.pay.cloudfund.api.front.consts.TakeOutOrderTypeEnum [com.hd123.cloud.pay.cloudfund.param.bill.zx.BillChannelEnum] -> BillChannelEnum.optParseBy($expr$)$END$
 
 
-.iftrueyzj
+.iftrueyzj : Booleans.ifTrue
   BOOLEAN -> [com.hd123.cloud.pay.cloudfund.utils.Booleans] -> Booleans.ifTrue($expr$, () -> $END$);
-.iffalseyzj
+.iffalseyzj : Booleans.ifFalse
   BOOLEAN -> [com.hd123.cloud.pay.cloudfund.utils.Booleans] -> Booleans.ifFalse($expr$, () -> $END$);
   
-.unboxyzj
+.unboxyzj : unboxing safely
   BOOLEAN -> [com.hd123.cloud.pay.cloudfund.utils.Boxing] -> Boxing.toBool($expr$)$END$
   INT -> [com.hd123.cloud.pay.cloudfund.utils.Boxing] -> Boxing.toInt($expr$)$END$
 
-.indexforeachyzj
+.indexforeachyzj : Lists.indexForeach
   java.util.List [com.hd123.cloud.pay.cloudfund.utils.Lists] -> Lists.indexForeach($expr$, (i, e) -> $END$);
 
 
