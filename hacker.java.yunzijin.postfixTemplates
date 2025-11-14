@@ -207,13 +207,13 @@
 
 
 .iftrueyzj : Booleans.ifTrue
-  BOOLEAN -> [com.hd123.cloud.pay.cloudfund.utils.Booleans] -> Booleans.ifTrue($expr$, () -> $END$);
+  BOOLEAN [com.hd123.cloud.pay.cloudfund.utils.Booleans] -> Booleans.ifTrue($expr$, () -> $END$);
 .iffalseyzj : Booleans.ifFalse
-  BOOLEAN -> [com.hd123.cloud.pay.cloudfund.utils.Booleans] -> Booleans.ifFalse($expr$, () -> $END$);
+  BOOLEAN [com.hd123.cloud.pay.cloudfund.utils.Booleans] -> Booleans.ifFalse($expr$, () -> $END$);
   
 .unboxyzj : unboxing safely
-  BOOLEAN -> [com.hd123.cloud.pay.cloudfund.utils.Boxing] -> Boxing.toBool($expr$)$END$
-  INT -> [com.hd123.cloud.pay.cloudfund.utils.Boxing] -> Boxing.toInt($expr$)$END$
+  BOOLEAN [com.hd123.cloud.pay.cloudfund.utils.Boxing] -> Boxing.toBool($expr$)$END$
+  INT [com.hd123.cloud.pay.cloudfund.utils.Boxing] -> Boxing.toInt($expr$)$END$
 
 .indexforeachyzj : Lists.indexForeach
   java.util.List [com.hd123.cloud.pay.cloudfund.utils.Lists] -> Lists.indexForeach($expr$, (i, e) -> $END$);
