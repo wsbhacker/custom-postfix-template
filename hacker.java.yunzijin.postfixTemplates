@@ -222,13 +222,12 @@
 .sandboxyzj : sandbox
   ANY -> SandBox.run2(() -> $expr$$END$);
 
-
-.warnyzj warn log wrapper
+.warnyzj : warn log wrapper
   org.slf4j.Logger -> [com.hd123.cloud.pay.cloudfund.utils.Logs] -> Logs.warn($expr$, () -> $expr$.warn("$END$", ));
 
-.infoyzj warn log wrapper
+.infoyzj : warn log wrapper
   org.slf4j.Logger -> [com.hd123.cloud.pay.cloudfund.utils.Logs] -> Logs.info($expr$, () -> $expr$.info("$END$", ));
 
-.erroryzj warn log wrapper
+.erroryzj : warn log wrapper
   org.slf4j.Logger -> [com.hd123.cloud.pay.cloudfund.utils.Logs] -> Logs.error($expr$, () -> $expr$.error("$END$", ));
 
